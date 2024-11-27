@@ -11,62 +11,105 @@ header{
     height: 60px;
     color: white;
 }
-#logo{
-    height: 40px;
-    width: 140px;
-    margin-top: 10px;
+.logo{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.logo_img{
+    height: 60px;
+    width: 60px;
     margin-left: 10px;
+}
+.logo_text{
+    font-size: clamp(0.8em,1.3em,1.5em);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .header_nav{
     display: flex;
     flex-direction: row;
     gap: 30px;
     padding-right: 1em;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    font-family: "Hepta Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: clamp(1rem,1vw,2rem); 
 }
 .nav_li{
     list-style: none;
 }
-#home_color{
+.home_color{
     background-color: yellow;
     height: 4px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in;
 }
-.nav_li:hover #home_color{
+.nav_li:hover .home_color{
     height: 8px;
 }
-#services_color{
+.services_color{
     background-color: red;
     height: 4px;
     transition: all 0.2s ease-in;
 }
-.nav_li:hover #services_color{
+.nav_li:hover .services_color{
     height: 8px;
 }
-#blogs_color{
+.blogs_color{
     background-color: orange;
     height: 4px;
     transition: all 0.2s ease-in;
 }
-.nav_li:hover #blogs_color{
+.nav_li:hover .blogs_color{
     height: 8px;
 }
-#portfolio_color{
+.portfolio_color{
     background-color: green;
     height: 4px;
     transition: all 0.2s ease-in;
 }
-.nav_li:hover #portfolio_color{
+.nav_li:hover .portfolio_color{
     height: 8px;
 }
-#contact_color{
+.contact_color{
     background-color: blue;
     height: 4px;
     transition: all 0.2s ease-in;
 }
-.nav_li:hover #contact_color{
+.nav_li:hover .contact_color{
     height: 8px;
+}
+.hero_container{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+#video_1{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+#video_text{
+    position: absolute;
+    margin-left:1em;
+    bottom: 4em;
+    z-index: 1;
+    color: white;
+}
+.heading{
+    margin: 0;
+    font-size: clamp(3rem, 5vw, 6rem); 
+    font-family: "Hepta Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.sub_heading{
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 4rem); 
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer{
     

@@ -3,39 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page Event Sphere</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Knewave&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body id="home_body">
-    <header id="header">
-        <img src="./images/logo2.png" name="logo" id="logo">
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" name="logo" class="logo_img">
+            <p class="logo_text">Event Sphere</p>
+        </div>
         <nav class="header_nav">
             <li class="nav_li">
-                <div id="home_color"></div>
+                <div class="home_color"></div>
                 <a>Home</a>
             </li>
             <li class="nav_li">
-                <div id="services_color"></div>
+                <div class="services_color"></div>
                 <a>Services</a>
             </li>
             <li class="nav_li">
-                <div id="blogs_color"></div>
+                <div class="blogs_color"></div>
                 <a>Blogs</a>
             </li>
             <li class="nav_li">
-                <div id="portfolio_color"></div>
+                <div class="portfolio_color"></div>
                 <a>Portfolio</a>
             </li>
             <li class="nav_li">
-                <div id="contact_color"></div>
+                <div class="contact_color"></div>
                 <a>Contact</a>
             </li>
         </nav>
     </header> 
-    <main></main> 
-    <br>
+    <main>
+        <div class="hero_container">
+            <video autoplay muted loop id="video_1">
+                <source src="./images/em.mp4" type="video/mp4">
+            </video>
+            <div id="video_text">
+                <p class="heading">Welcome to Event Sphere!</p>
+                <br><br>
+                <p class="sub_heading">Plan your Special Occassions <br>with Us.</p>
+            </div>
+        </div>
+    </main> 
     <footer>
-        
+        <div>
+            <img src="" class="">
+            <img src="" class="">
+            <img src="" class="">
+            <img src="" class="">
+        </div>
     </footer>
 </body>
 </html>
