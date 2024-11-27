@@ -1,3 +1,73 @@
-p{
+#home_body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #181A3D;
+    height: 60px;
+    color: white;
+}
+#logo{
+    height: 40px;
+    width: 140px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 1em;
     font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+.nav_li{
+    list-style: none;
+}
+#home_color{
+    background-color: yellow;
+    height: 4px;
+    transition: all 0.2s ease-in-out;
+}
+.nav_li:hover #home_color{
+    height: 8px;
+}
+#services_color{
+    background-color: red;
+    height: 4px;
+    transition: all 0.2s ease-in;
+}
+.nav_li:hover #services_color{
+    height: 8px;
+}
+#blogs_color{
+    background-color: orange;
+    height: 4px;
+    transition: all 0.2s ease-in;
+}
+.nav_li:hover #blogs_color{
+    height: 8px;
+}
+#portfolio_color{
+    background-color: green;
+    height: 4px;
+    transition: all 0.2s ease-in;
+}
+.nav_li:hover #portfolio_color{
+    height: 8px;
+}
+#contact_color{
+    background-color: blue;
+    height: 4px;
+    transition: all 0.2s ease-in;
+}
+.nav_li:hover #contact_color{
+    height: 8px;
+}
+footer{
+    
 }
