@@ -120,6 +120,24 @@
     background-color:#181A3D;
     color: yellow;
 }
+.blogs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+}
+.blog{
+    width: 850px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.blog_text{
+    font-size: clamp(3.2rem, 4.2vw, 4.2rem); 
+    color: #36454F;
+}
 
 /* the css above used for home */
 
