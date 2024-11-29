@@ -160,6 +160,10 @@ header{
 .nav_li{
     list-style: none;
 }
+.nav_li a{
+    text-decoration: none;
+    color: white;
+}
 .home_color{
     background-color: yellow;
     height: 4px;
@@ -238,7 +242,6 @@ footer{
 /*Services Page css */
 .services {
     padding: 60px 20px;
-    background-color: #F9F9F9;
 }
 .services-intro {
     text-align: center;
@@ -313,6 +316,7 @@ footer{
 }
 /* Service Categories Section */
 .service-categories {
+    text-align: center;
     padding: 60px 20px;
     background-color: #f4f4f4; /* Light Gray */
 }
