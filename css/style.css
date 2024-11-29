@@ -111,6 +111,87 @@ header{
     font-size: clamp(2rem, 4vw, 4rem); 
     font-family: Arial, Helvetica, sans-serif;
 }
+#welcome_message{
+    text-align: center;
+    padding: 10px;
+}
+.content{
+    color: #36454F;
+    font-size: clamp(1.2rem, 1.7vw, 2rem);
+}
+.headings{
+    font-family: "Almendra", serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-style: normal;
+}
+#services_sec{
+    text-align: center;
+}
+#services_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    row-gap: 4em;
+    flex-wrap: wrap;
+}
+.ser_sub{
+    background-size: cover;
+    height: 725px;
+    width: 700px;
+    text-align: left;
+    padding: 5px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: flex-end;
+}
+#sub_one{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/parties.jpg');
+}
+#sub_two{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/Decorations.jpg');
+}
+#sub_three{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/Food.jpg');
+}
+#sub_four{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/fireworks.jpg'); ;
+}
+.ser_sub:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    height: 735px;
+    width: 735px;
+    transform: rotateZ(1deg);
+}
+.sub_services{
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+    margin: 0;
+    font-family: "Hepta Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.sub_content{
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    margin-bottom: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    background-color: blue;
+    font-size: clamp(1rem, 1.7vw, 1.7rem);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 0;
+
+}
 footer{
     
 }
