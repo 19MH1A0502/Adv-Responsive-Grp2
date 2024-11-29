@@ -235,4 +235,143 @@ footer{
 }
 
 
+/*Services Page css */
+.services {
+    padding: 60px 20px;
+    background-color: #F9F9F9;
+}
+.services-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-intro h2 {
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+.services-intro p {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+
+/* Core Services Grid */
+.services-grid-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #F1C27D;
+}
+.service-card .icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.service-card .btn {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* Service Categories Section */
+.service-categories {
+    padding: 60px 20px;
+    background-color: #f4f4f4; /* Light Gray */
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.category-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 1rem;
+}
+.hero {
+    background: url('../images/parties.jpg') center center/cover no-repeat;
+    height: 35vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    background-color: #F1C27D;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
 
