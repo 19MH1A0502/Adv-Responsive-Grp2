@@ -38,8 +38,7 @@
     margin: 0;
     font-size: clamp(3rem, 5vw, 6rem); 
     font-family: "Hepta Slab", serif;
-    font-style: normal;
-    
+    font-style: normal;  
 }
 .sub_heading{
     margin: 0;
@@ -67,15 +66,15 @@
 #services_content{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     padding: 1em;
     gap: 5vw;
     flex-wrap: wrap;
 }
 .ser_sub{
     background-size: cover;
-    height: 100vh;
-    width: 40vw;
+    height: 95vh;
+    width: 35vw;
     min-width: 320px;
     text-align: left;
     padding: 5px;
@@ -101,8 +100,8 @@
 }
 .ser_sub:hover{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-    height: 110vh;
-    width: 43vw;
+    height: 100vh;
+    width: 40vw;
     transform: rotateZ(1deg);
 }
 .sub_services{
@@ -147,6 +146,7 @@
     object-fit: cover;
     text-align: center;
     border-radius: 30px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.7);
 }
 .blog_text{
     font-size: clamp(3.2rem, 4.2vw, 4.2rem); 
@@ -159,36 +159,53 @@
     width: 100%;
 }
 .cust{
-    width: 40vw;
-    height: 60vh;
-    min-width: 320px;
-    object-fit: cover;
-    text-align: center;
-    border-radius: 30px;
-    background-size: cover;
-    padding: 2em;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    color: white;
+    gap: 0.5em;
+    justify-content: center;
+    width: 40%;
+    background-color:#EDEDED;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 3em;
+}
+.sub_cust{
+    font-family: "Hepta Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .cust_cont{
-    font-size: clamp(1.2rem, 1.7vw, 2rem);
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-family: Arial, Helvetica, sans-serif;
 }
 #cust_1{
     margin-right: auto;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/parties.jpg');
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/jonas-leupe-WargGLQW_Yk-unsplash.jpg');
+    transition: width 0.5s ease-in-out;
 }
 #cust_2{
     margin-left: auto;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/parties.jpg');
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/jonas-leupe-WargGLQW_Yk-unsplash.jpg');
+    transition: all 1s ease-in-out;
+}
+#cust_1:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/filip.jpg');
+    object-fit: cover;
+    width: 45%;
+}
+#cust_2:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/filip.jpg');
+    object-fit: cover;
+    width: 45%;
 }
 .cust_text{
-    margin:0 auto;
-    margin-bottom: 1em;
-    font-size: clamp(2rem, 2.5vw, 2.5rem);
-    color: #36454F;
+    font-family: "Almendra", serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-style: normal;
+    margin: auto;
 }
 .input{
     width: 100%;
@@ -211,6 +228,14 @@
     width: 8vw;
     margin: auto;
 }
+#replace_1, #replace_2, #replace_3, #replace_4{
+    color: white;
+}
+#cust_1:hover{
+    
+}
+
+
 
 
 /* the css above used for home */
@@ -224,7 +249,6 @@ header{
     justify-content: center;
     width: 100%;
     height: 60px;
-    position: fixed;
     z-index: 100;
 }
 .header_max{
@@ -347,7 +371,7 @@ footer{
 
 /* PORTFOLIO */
 .port_hero{
-    background-color: lightgray;
+    background-color:#EDEDED;
     width: 90%;
     height: auto;
     max-width: 1500px;
@@ -358,12 +382,16 @@ footer{
     align-items: center;
     margin: auto;
     padding: 2em;
+    color: black;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }
 #port_back{
     width: 40%;
     height: 70vh;
     margin-top: auto;
     margin-bottom: auto;
+    object-fit: cover;
+    border-radius: 20px;
 }
 .port_heading{
     font-size: clamp(3rem, 3.5vw, 6rem); 
@@ -379,32 +407,28 @@ footer{
     height: auto;
 }
 .event_item {
-    background-color: #d9dde3;
+    background-color:#EDEDED;
     width: 300px; 
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
     text-align: center;
     border-radius: 8px;
-    padding: 15px;
+    padding: 1em;
+    transition: all 0.6s ease-in-out;
   }
-
-  .image {
-    background-color: #f3f4f7; 
-    height:auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-
-  .image span {
-    color: #888;
-    font-size: 1.2rem;
+  .event_item:hover{
+    height: 300px;
+    gap: 0.2em;
   }
 
   .port_img{
     width:100%; 
-    height:100%;
+    height:auto;
     border-radius: 5%;
+    object-fit: cover;
   }
 
   .port_heading_event{
@@ -416,8 +440,12 @@ footer{
 
   .text {
     background-color: #f3f4f7; 
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    color: #36454F;
     border-radius: 8px;
     font-family: "Hepta Slab", serif;
+    padding: 0.5em;
   }
   .port_event_items{
     width: 100%;
@@ -445,11 +473,26 @@ footer{
     gap: 0.5em;
     justify-content: center;
     width: 70%;
-    background-color: lightgray;
+    background-color:#EDEDED;
     padding: 0.5em;
     text-align: center;
     border-radius: 3em;
+    transition: transform 0.7s ease-in-out, background-color 0.9s, color 0.8s ease-in-out;
   }
+  .port_review:hover{
+    background-color: darkgray;
+    transform: scale(0.95);
+  }
+  .port_review:hover .rev_head{
+    color:#36454F;
+  }
+  .port_review:hover .port_cust{
+    color: #EDEDED;
+  }
+  .rev_head{
+    font-family: "Hepta Slab", serif;
+    font-style: normal;  
+}
   .port_awards{
     display: flex;
     width: 100%;
@@ -461,7 +504,7 @@ footer{
   }
   .port_award_text{
     width: 40%;
-    background-color: lightgray;
+    background-color: #EDEDED;
     padding: 0.5em;
     text-align: center;
     border-radius: 1em;
@@ -478,6 +521,12 @@ footer{
     height: 30vh;
     width: 15vw;
     border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+  }
+  .award:hover{
+    transform: scale(1.1);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
   }
   .award_text{
     font-size: clamp(1.2rem, 2vw, 2rem);
@@ -515,8 +564,16 @@ footer{
   * {
     box-sizing: border-box;
   }
+  .port_cust{
+    color: #36454F;
+  }
+  
+
 
   @media only screen and (min-width:0px) and (max-width:430px) {
+    #cust_1:hover{
+        width: 450px ;
+      }
     header{
         height: 370px;
         position: relative;
@@ -578,8 +635,8 @@ footer{
         justify-content: center;
     }
     #port_back{
-        width: 90%;
-        height: 70vh;
+        width: 95%;
+        height: 60vh;
         object-fit: cover;
     }
     .port_event_items{
@@ -604,13 +661,19 @@ footer{
         border-radius: 5px;
     }
     .award{
-        height: 25vh;
+        height: 23vh;
         width: 40vw;
         border-radius: 10px;
     }
+    .event_item:hover{
+        height: 500px;
+        gap: 0.5em;
+    }
+    
+    
     
 }
-@media only screen and (min-width:430px) and (max-width:900px) {
+@media only screen and (min-width:430px) and (max-width:1100px) {
     .ser_sub{
         height: 50vh;
         width: 30vw;
@@ -693,5 +756,12 @@ footer{
     width: 40vw;
     border-radius: 10px;
 }
+.event_item:hover{
+    height: 500px;
+    gap: 0.5em;
 }
+}
+
+
+
 
